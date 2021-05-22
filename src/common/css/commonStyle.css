@@ -1,0 +1,25 @@
+i,em,label{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline: none;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+button{
+    outline: none;
+}
+/*取消button点击的默认样式*/
+button:focus {
+    outline: none;
+}
+
+

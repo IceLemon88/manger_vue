@@ -1,0 +1,29 @@
+<template>
+    <div class="keyThree">
+        <!-- 顶部 -->
+        <!-- <HeaderTop title="退出"></HeaderTop> -->
+        <!-- 左侧菜单栏 -->
+        <!-- <KeyMain></KeyMain> -->
+        keyThree 路由主键3
+
+    </div>
+</template>
+
+<script>
+// import HeaderTop from '../../components/HeaderTop/HeaderTop.vue'
+// import KeyMain from '../../components/KeyMain/KeyMain.vue' //左侧菜单栏
+
+export default {
+    components: {
+        // HeaderTop,
+        // KeyMain
+    }
+}
+
+</script>
+
+<style>
+.keyThree{
+    margin-left: 200px;
+}
+</style>

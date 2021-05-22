@@ -1,0 +1,6 @@
+import ajax from './ajax'
+
+//登录
+export const login = (data) => ajax('url',data,'POST');
+//获取左侧菜单列表
+export const getMenu = () => ajax('url');

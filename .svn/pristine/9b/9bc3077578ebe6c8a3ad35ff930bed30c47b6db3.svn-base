@@ -1,0 +1,29 @@
+<template>
+    <!-- 头部 -->
+    <header class="headers">
+        <!-- 插槽占位 <slot> -->
+        <slot name="left">
+            <!-- <span class="header_name">欢迎您，{{title}}</span>             -->
+        </slot>
+        <span class="header_login">
+            <!-- <a href="javascript:;" id="header_login_btn">退出</a> -->
+
+            <router-link to="/login" class="profile-link">
+                <span class="header_login_btn">退出</span>
+            </router-link>
+        </span>
+    </header>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+.headers{
+    text-align: right;
+    margin-right: 10px;
+}
+</style>

@@ -1,0 +1,23 @@
+<template>
+    <div>
+        <KeyMain></KeyMain>
+        <HeaderTop></HeaderTop>
+        <router-view/>
+    </div>
+</template>
+
+<script>
+    import KeyMain from '../../components/KeyMain/KeyMain.vue';
+    import HeaderTop from '../../components/HeaderTop/HeaderTop.vue';
+
+    export default {
+        components: {
+            KeyMain,
+            HeaderTop
+        }
+    }
+</script>
+
+<style>
+
+</style>

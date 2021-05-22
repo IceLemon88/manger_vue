@@ -1,0 +1,112 @@
+<template>
+    <div class="keyOne">
+        <!-- keyOne 路由主键1 -->
+        <!-- 顶部 -->
+        <HeaderTop title="退出">
+            <!-- 插槽 slot -->
+            <span class="header_name" slot="left">欢迎您，<i id="managerName">{{title}}</i></span>
+        </HeaderTop>
+        <!-- 左侧菜单栏 -->
+        <KeyMain></KeyMain>
+
+
+
+        <!-- 首页导航 -->
+        <!-- <nav class="keyone_nav">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <a href="javascript:;" class="link_box">
+                        <div class="food_container">
+                            <img src="./images/1.png" alt="">
+                        </div>
+                        <span>导航1</span>
+                    </a>
+                    <a href="javascript:;" class="link_box">
+                        <div class="food_container">
+                            <img src="./images/2.png" alt="">
+                        </div>
+                        <span>导航2</span>
+                    </a>
+                    <a href="javascript:;" class="link_box">
+                        <div class="food_container">
+                            <img src="./images/3.png" alt="">
+                        </div>
+                        <span>导航3</span>
+                    </a>
+                    <a href="javascript:;" class="link_box">
+                        <div class="food_container">
+                            <img src="./images/4.png" alt="">
+                        </div>
+                        <span>导航4</span>
+                    </a>
+                    <a href="javascript:;" class="link_box">
+                        <div class="food_container">
+                            <img src="./images/5.png" alt="">
+                        </div>
+                        <span>导航5</span>
+                    </a>
+                    <a href="javascript:;" class="link_box">
+                        <div class="food_container">
+                            <img src="./images/6.png" alt="">
+                        </div>
+                        <span>导航6</span>
+                    </a>
+                </div>
+            </div>
+        </nav> -->
+        <!-- 首页内容区域 -->
+        <!-- <div class="keyone_list">
+            <div class="shop_header">
+                <i class="iconfont"></i>
+                <span class="shop_header_title">附近商家</span>
+            </div>
+            <div class="shop_container">
+                <ul class="shop_list">
+                    <li class="shop_li">
+                        <span>内容1</span>
+                    </li>
+                    <li class="shop_li">
+                        <span>内容2</span>
+                    </li>
+                    <li class="shop_li">
+                        <span>内容3</span>
+                    </li>
+                    <li class="shop_li">
+                        <span>内容4</span>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+        首页
+    </div>
+</template>
+
+<script>
+    import HeaderTop from '../../components/HeaderTop/HeaderTop.vue' //顶部
+    import KeyMain from '../../components/KeyMain/KeyMain.vue' //左侧菜单栏
+
+    export default {
+        components: {
+            HeaderTop,
+            KeyMain
+        },
+        props: { //传值
+            title: String
+        }
+    }
+
+    // var app = new Vue({
+    //     el: '#managerName',
+    //     data: {
+    //         message: "admins"
+    //     }
+    // });
+</script>
+
+<style>
+    @import './css/keyone.css';
+
+    .keyOne{
+        margin-left: 200px;
+    }
+</style>

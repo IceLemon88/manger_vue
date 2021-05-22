@@ -1,0 +1,40 @@
+<template>
+    <div class="keyOne">
+        <!-- keyOne 路由主键1 -->
+        <!-- 顶部 -->
+        <!-- <HeaderTop title="退出"> -->
+            <!-- 插槽 slot -->
+            <!-- <span class="header_name" slot="left">欢迎您，<i id="managerName">{{title}}</i></span>
+        </HeaderTop> -->
+        <!-- 左侧菜单栏 -->
+        <!-- <KeyMain></KeyMain> -->
+
+        
+        首页
+    </div>
+</template>
+
+<script>
+    // import HeaderTop from '../../components/HeaderTop/HeaderTop.vue' //顶部
+    // import KeyMain from '../../components/KeyMain/KeyMain.vue' //左侧菜单栏
+
+    export default {
+        components: {
+            // HeaderTop,
+            // KeyMain
+        },
+        props: { //传值
+            title: String
+        }
+    }
+
+
+</script>
+
+<style>
+@import './css/keyone.css';
+
+.keyOne{
+    margin-left: 200px;
+}
+</style>

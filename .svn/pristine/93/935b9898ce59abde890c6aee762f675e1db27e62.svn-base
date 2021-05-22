@@ -1,0 +1,28 @@
+<template>
+    <div class="keyFour">
+        <!-- 顶部 -->
+        <!-- <HeaderTop title="退出"></HeaderTop> -->
+        <!-- 左侧菜单栏 -->
+        <!-- <KeyMain></KeyMain> -->
+        keyFour 路由主键4
+    </div>
+</template>
+
+<script>
+    // import HeaderTop from '../../components/HeaderTop/HeaderTop.vue'
+    // import KeyMain from '../../components/KeyMain/KeyMain.vue' //左侧菜单栏
+
+    export default {
+        components: {
+            // HeaderTop,
+            // KeyMain
+        }
+    }
+
+</script>
+
+<style>
+.keyFour{
+    margin-left: 200px;
+}
+</style>

@@ -1,0 +1,31 @@
+<template>
+    <div id="app">
+        <!-- <KeyMain/> -->
+        <router-view/>
+    </div>
+</template>
+
+<script>
+// import KeyMain from './components/KeyMain/KeyMain.vue'
+
+export default {
+    name: 'App',
+    components: {
+        // KeyMain
+    }
+}
+</script>
+
+<style>
+    /* 引用自定义样式方法 */
+    /* @import "../static/css/demo.css";  */
+
+    /* 引用通用样式方法 */
+    @import "./common/css/common.css";
+
+    /* .app{
+        width: 100%;
+        height: 100%;
+        background: #f0f2f5;
+    } */
+</style>

@@ -1,0 +1,68 @@
+<template>
+    <div>
+        <!-- KeyMain 主键 -->
+        <!-- 头部 -->
+        <!-- <header class="keyone_header">
+            <span class="header_name">欢迎您，admins</span>
+            <span class="header_login">
+                <a href="javascript:;" id="header_login_text">退出</a>
+            </span>
+        </header> -->
+        <!-- 左侧菜单栏 -->
+        <div class="header_guide">
+            <div class="logos">
+                <img src="../../common/img/beikong.png" alt="">
+            </div>
+            <!-- <a href="javascript:;" class="guide_item on"> -->
+            <!-- 使用对象语法对tab标签修改样式(':class')：当类名确定，不确定是否有该类名 -->
+            <a href="javascript:;" class="guide_item" :class="{on: '/keyone'===$route.fullPath}" @click="goTo('/keyone')">
+                <span class="item_icon">
+                <i class="iconfont"></i>
+                </span>
+                <span>首页</span>
+            </a>
+            <a href="javascript:;" class="guide_item" :class="{on: '/keytwo'===$route.fullPath}" @click="goTo('/keytwo')">
+                <span class="item_icon">
+                <i class="iconfont"></i>
+                </span>
+                <span>子页面1</span>
+            </a>
+            <a href="javascript:;" class="guide_item" :class="{on: '/keythree'===$route.fullPath}" @click="goTo('/keythree')">
+                <span class="item_icon">
+                <i class="iconfont"></i>
+                </span>
+                <span>子页面2</span>
+            </a>
+            <a href="javascript:;" class="guide_item" :class="{on: '/keyfour'===$route.fullPath}" @click="goTo('/keyfour')">
+                <span class="item_icon">
+                <i class="iconfont"></i>
+                </span>
+                <span>子页面3</span>
+            </a>
+        </div>
+    </div>
+    
+</template>
+
+<script>
+    export default {
+        methods: { //方法
+            // 点击方法——模块跳转
+            goTo (path) {
+                this.$router.replace(path);
+            }
+        }
+    }
+</script>
+
+<style>
+    @import "./css/keymain.css";
+
+    .header_guide{
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+</style>

@@ -1,0 +1,79 @@
+<template>
+    <div>
+        <!-- KeyMain 主键 -->
+        <!-- 头部 -->
+        <!-- <header class="keyone_header">
+            <span class="header_name">欢迎您，admins</span>
+            <span class="header_login">
+                <a href="javascript:;" id="header_login_text">退出</a>
+            </span>
+        </header> -->
+        <!-- 左侧菜单栏 -->
+        <div class="header_guide">
+            <div class="logos">
+                <!-- <img src="../../common/img/logo.png" alt=""> -->
+                <img :src="imgUrl">
+            </div>
+            <!-- <a href="javascript:;" class="guide_item on"> -->
+            <!-- 使用对象语法对tab标签修改样式(':class')：当类名确定，不确定是否有该类名 -->
+            <a href="javascript:;" class="guide_item" :class="{on: '/home/keyone'===$route.fullPath}" @click="goTo('/home/keyone')">
+                <span class="item_icon">
+                <i class="iconfont"></i>
+                </span>
+                <span>首页</span>
+            </a>
+            <a href="javascript:;" class="guide_item" :class="{on: '/home/table'===$route.fullPath}" @click="goTo('/home/table')">
+                <span class="item_icon">
+                <i class="iconfont"></i>
+                </span>
+                <span>table</span>
+            </a>
+            <a href="javascript:;" class="guide_item" :class="{on: '/home/keytwo'===$route.fullPath}" @click="goTo('/home/keytwo')">
+                <span class="item_icon">
+                <i class="iconfont"></i>
+                </span>
+                <span>子页面1</span>
+            </a>
+            <a href="javascript:;" class="guide_item" :class="{on: '/home/keythree'===$route.fullPath}" @click="goTo('/home/keythree')">
+                <span class="item_icon">
+                <i class="iconfont"></i>
+                </span>
+                <span>子页面2</span>
+            </a>
+            <a href="javascript:;" class="guide_item" :class="{on: '/home/keyfour'===$route.fullPath}" @click="goTo('/home/keyfour')">
+                <span class="item_icon">
+                <i class="iconfont"></i>
+                </span>
+                <span>子页面3</span>
+            </a>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    methods: { // 方法
+        // 点击方法——模块跳转
+        goTo(path) {
+            this.$router.replace(path);
+        }
+    },
+    data () {
+        return {
+            imgUrl: require('../../common/img/logo.png')
+        }
+    }
+}
+</script>
+
+<style>
+    @import "./css/keymain.css";
+
+    .header_guide{
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+</style>

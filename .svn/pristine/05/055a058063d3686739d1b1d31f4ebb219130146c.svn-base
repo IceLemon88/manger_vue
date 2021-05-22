@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>manager</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- built files will be auto injected -->
+      <!-- <section class="content"> -->
+        <!-- 左侧头部 -->
+        <!-- <header class="header_guide">
+          <a href="javascript:;" class="guide_item on">
+            <span class="item_icon">
+              <i class="iconfont"></i>
+            </span>
+            <span>首页</span>
+          </a>
+          <a href="javascript:;" class="guide_item">
+            <span class="item_icon">
+              <i class="iconfont"></i>
+            </span>
+            <span>子页面1</span>
+          </a>
+          <a href="javascript:;" class="guide_item">
+            <span class="item_icon">
+              <i class="iconfont"></i>
+            </span>
+            <span>子页面2</span>
+          </a>
+          <a href="javascript:;" class="guide_item">
+            <span class="item_icon">
+              <i class="iconfont"></i>
+            </span>
+            <span>子页面3</span>
+          </a>
+        </header> -->
+        <!-- 首页 -->
+        <!-- <div class="on">
+
+        </div> -->
+        <!-- 子页面1 -->
+        <!-- <div>
+
+        </div> -->
+        <!-- 子页面2 -->
+        <!-- <div>
+
+        </div> -->
+        <!-- 子页面3 -->
+        <!-- <div>
+
+        </div> -->
+      <!-- </section> -->
+      <!-- on表示显示，off表示关闭 -->
+      <!-- <div class="off">
+        
+      </div>     -->
+    </div>
+  </body>
+</html>

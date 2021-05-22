@@ -1,0 +1,31 @@
+i,em,label{
+    display: inline-block;
+}
+
+/* 头部 */
+/* .keyone_header{
+    text-align: right;
+    margin-right: 10px;
+} */
+.logos img{
+    width: 80px;
+    padding-left: 14px;
+    margin-top: 20px;
+}
+.header_guide{
+    /* background: #d6d6d6; */
+    background-color: #001529;
+    width: 200px;
+}
+.header_guide .guide_item{
+    display: block;
+    line-height: 40px;
+    padding-left: 24px;
+    text-decoration: none; /*去掉a标签下划线*/
+    color: #ffffff;
+}
+.on {
+    /* color: green !important; */
+    background-color: #1890ff;
+}
+
